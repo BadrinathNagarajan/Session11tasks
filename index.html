@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:black;
+            height:225vh;   
+                     
+        }
+        .firstrow{
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            padding-bottom: 25px;
+        }
+        .secondrow{
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            padding-bottom: 25px;
+        }
+        .thirddrow{
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            padding-bottom: 25px;
+        }
+        .firstbox{
+            color:white;
+            background-color:orange;
+            width:220px;
+            height:210px;
+            display:flex;
+            flex-direction:column;
+            justify-content:start;
+            align-items: center;
+        }
+        .secondbox{
+            background-color:rgb(25, 164, 219);
+            width:220px;
+            height:210px;
+            display:flex;
+            flex-direction:column;
+            justify-content:start;
+            align-items: center;
+        }
+        .thirdbox{
+            background-color: orangered;
+            width:440px;
+            height:200px;
+        }
+        .fourthbox{
+            background-color: rgb(25, 164, 219);
+            width:220px;
+            height:200px;
+        }
+        .sixthbox{
+            background-color: rgb(25, 164, 219);
+            width:440px;
+            height:120px;
+        }
+        .fifthbox{
+            background-color: rgb(25, 164, 219);
+            width:220px;
+            height:200px;
+        }
+        .textcontainer{
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+        }
+        .ic1{
+            padding-top:50px;
+        }
+        .tc_text h1{
+            color:red;  
+            font-weight: bolder; 
+            margin-bottom: 0px; 
+            font-size:45px;        
+        }
+        .tc_text h5{
+            color:grey;
+            padding-bottom: 30px;
+            margin-top:0px;
+        }
+        .fourthrow{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            padding-bottom:20px;
+        }
+        .fifthrow{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        .sixththrow{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        .f6{
+            background-color: orangered;
+            width:220px;
+            height:200px;
+        }
+        .f7{
+            background-color: orange;
+            width:220px;
+            height:200px;
+        }
+        .userimages{
+            padding-top:10px;
+        }
+        .text h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text1 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text2 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text3 h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:20px;
+            font-weight:lighter;
+        }.text4 h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:20px;
+            font-weight:lighter;
+        }
+        .text5 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text6 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text7 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .imgandtxt{
+            display:flex;
+            flex-direction:row;
+        }        
+        .text h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text10 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+            padding-top:10px;
+        }
+        .text12 h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text13 h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:20px;
+            font-weight:lighter;
+        }.text14 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:20px;
+            font-weight:lighter;
+        }
+        .text15 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text16 h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+        .text17 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text18 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .text19 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-weight:lighter;
+        }
+        .userimages2{
+            padding-top:5px;
+        }
+        .imgandtxt3{
+            display:flex;
+            flex-direction:row;
+        }
+        .text21{
+            padding-top: 25px;
+            padding-left:10px;
+        }
+        .text22{
+            padding-top: 25px;
+            padding-left:10px;
+        }
+        .text21 h2{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:20px;
+        } 
+        .text22 h4{
+            color:white;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:13px;
+            font-weight:lighter;
+        } 
+        .userimages3{
+            padding-top:40px;
+            padding-left:20px;
+        }
+        .userimages3 img{
+            padding-left:15px;
+            padding-right:30px;
+        }
+        .userimages3 figure{
+            display:inline-flex;
+            flex-direction: column;
+            margin:0;
+        }
+        
+        .imgcon{
+            display:flex;
+            flex-direction: row;
+        }
+        .userimages3 figcaption{
+            display:inline;
+        }
+        .imgandtext4{
+            color:white;
+            font-weight: bold;
+            margin-left:10px;            
+        }
+        .imgandtext4 img{
+            width:20px;
+            margin-left:15px;
+            margin-top:10px;
+        }
+        .imgandtext4 h3{
+            margin-top:10px;
+            margin-bottom:5px;          
+        }
+        .text31{
+            color:white;
+            margin-left:10px;
+        }
+        .text31 h4{
+            margin-top:5px;
+            margin-bottom:10px;
+            font-size:13px;
+            font-weight:lighter;
+        }
+        .text32{
+            margin-top:50px;
+            color:white;
+            margin-left:10px;
+        }
+        .text32 h4{
+            margin-top:5px;
+            margin-bottom:10px;
+            font-size:13px;
+            font-weight:lighter;
+        }
+        .text41{
+            color:white;
+            margin-left:10px;
+        }
+        .text41 h5{
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:13px;
+            font-weight:lighter;
+        }
+        .text41 h1{
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;           
+        }
+        .text41 h3{
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;           
+        }
+        .text41 img{
+            width: 50px;
+            height:60px;
+            margin-top:20px;
+            margin-left:70px;
+        }
+        .text42{
+            color:white;
+            margin-left:10px;
+        }
+        .text42 h5{
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:13px;
+            font-weight:lighter;
+        }
+        .text42 h1{
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;           
+        }
+        .text42 h3{
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;           
+        }
+        .text42 img{
+            width: 50px;
+            height:50px;
+            margin-top:20px;
+            margin-left:70px;
+        }
+        .sixthbox{
+            margin-top:10px;
+            display:flex;
+            flex-direction: row;
+            color:white;
+        }
+        .sixthbox h2{
+            margin-top:5px;
+            margin-bottom:0px;
+            margin-left:25px;
+            font-size:35px;
+            font-weight:bolder;
+        }
+        .sixthbox h5{
+            margin-top:0px;
+            margin-bottom:0px;
+            margin-left:25px;
+            font-weight:lighter;
+            font-size:13px;
+        }
+        .imgfifthrow img{
+            margin-top:20px;
+            margin-left:60px;
+            height:60px;
+            width:60px;
+        }
+        .sixthrow{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        .seventhbox{
+            margin-top:20px;
+            display:flex;
+            flex-direction: row;
+            color:white;
+            background-color: orange;
+            width:440px;
+            height:120px;
+            margin-bottom:20px;
+        }
+        .seventhbox h2{
+            margin-top:5px;
+            margin-bottom:0px;
+            margin-left:25px;
+            font-size:32px;
+            font-weight:bolder;
+        }
+        .seventhbox h5{
+            margin-top:0px;
+            margin-bottom:0px;
+            margin-left:25px;
+            font-weight:lighter;
+            font-size:13px;
+        }
+        .imgsixthrow img{
+            margin-top:20px;
+            margin-left:40px;
+            height:60px;
+            width:60px;
+        }
+        .seventhrow{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        .eigthbox{
+            color:white;
+            background-color:rgb(25, 164, 219);;
+            width:220px;
+            height:210px;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        .eigthbox p{
+            margin-top:0px;
+            margin-bottom:0px;
+            margin-left:10px;
+        }
+        .eigthbox h2{
+            margin-top:0px;
+            margin-bottom:0px;
+            margin-left:10px;
+        }
+        .imgseven{                        
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:60px;
+            width:60px;
+        }
+        .imgseven img{                                   
+            height:60px;
+            width:60px;
+            padding-bottom: 10px;
+        }
+        .ninthbox{
+            color:white;
+            background-color:orangered;
+            width:220px;
+            height:210px;
+            
+        }
+        .ninthbox h4{
+            margin-top:0px;
+            margin-bottom: 0px;
+            font-weight:bolder;
+        }
+        .ninthbox h5{
+            margin-top:2px;
+            margin-bottom: 2px;
+            font-weight: lighter;
+        }
+        .h4text{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .h5text{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            margin-top:10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="textcontainer">
+            <div class="ic1">
+                <img height='32' width='32' src="./circle-play-solid.svg"/>
+            </div>>
+            <div class="tc_text">
+                <h1>OBESITY</h2>                   
+                <h5>CHILDHOOD STATISTICS</h5>
+            </div>
+        </div>
+        <div class="firstrow">
+            <div class="firstbox">
+                <div class="userimages">
+                    <img src="./user-thin.svg"/>
+                    <img src="./user-thin.svg"/>
+                    <img src="./user-thin.svg"/>
+                </div>
+                <div class="text">
+                    <h2> 1 IN 3</h2>
+                </div>
+                <div class="text1">
+                    <h4>children and</h2>
+                </div>
+                <div class="text2">
+                    <h4>adolescents aged (2-19)</h4>
+                </div>
+                <div class="text3">
+                    <h2>ARE OVERWEIGHT</h2>
+                </div>
+                <div class="text4">
+                    <h2>OR OBESE</h2>
+                </div>
+                <div class="text5">
+                    <h4> and almost NONE meet</h4>
+                </div>
+                <div class="text6">
+                    <h4>recommended healthy diet and</h4>
+                </div>
+                <div class="text7">
+                    <h4>physical activity amount.</h4>
+                </div>
+            </div>
+            <div class="secondbox">               
+                <div class="text10">
+                    <h4>An estimated</h4>
+                </div>
+                <div class="imgandtxt">
+                <div class="userimages2">
+                    <img src="./bread-slice-solid.svg"/>
+                    <img src="./bottle-droplet-solid.svg"/>
+                </div>
+                <div class="text12">
+                    <h2>12.5</h2>
+                </div>
+                </div>
+                <div class="text13">
+                    <h2>MILLION</h2>
+                </div>
+                <div class="text14">
+                    <h4>Children (ages 5 years or </h4>
+                </div>
+                <div class="text15">
+                    <h4>younger), spend</h4>
+                </div>
+                <div class="text16">
+                    <h2>33 HOURS/ WEEK</h2>
+                </div>
+                <div class="text17">
+                    <h4>in child care settings and</h4>
+                </div>
+                <div class="text18">
+                    <h4>consume nearly all of their</h4>
+                </div>
+                <div class="text19">
+                    <h4>daily calories.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="secondrow">
+            <div class="thirdbox">
+                <div class="imgandtxt3">
+                <div class="text21">
+                <h2>OBESITY IS LINKED</h2>
+                <h2>TO MORE CHRONIC</h2>
+                <h2>CONDITIONS THAN:</h2>
+                </div>
+                <div class="userimages3">
+                    <div class="imgcon">
+                    <figure>
+                    <img src="./smoking-solid.svg"/>
+                    <figcaption>Smoking</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="./money-bills-solid.svg"/>
+                    <figcaption> Poverty</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="./martini-glass-citrus-solid.svg"/>
+                    <figcaption>Drinking</figcaption>
+                    </figure>
+                    </div>
+                </div>
+                </div>
+                <div class="text22">
+                    <h4>Increasing the risk of more tham 20 preventable diseases, including sleep</h4>
+                    <h4>apnes,asthma, heart diseases, Type2 diabetes, osteoarthiritis, high blood</h4>
+                    <h4>pressure and high cholestrol-stroke.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="thirddrow">
+            <div class="fourthbox">
+                <div class="imgandtext4">
+                    <h3>RISK FACTORS<img src="./shield-solid.svg"/></h3>
+                </div>
+                <div class="text31">
+                    <h4>
+                        children in their early teens who are
+                        obese and who have <b><u>high triglyceride
+                        levels</u></b> have arteries similar to those 
+                        of 45-year olds.
+                    </h4>
+
+                    <h4>
+                        obese children as young as age 3
+                        show indicators of <b><u>developing heart
+                        disease</u></b> later in life.
+                    </h4>
+                </div>
+            </div>
+            <div class="fifthbox">
+                <div class="text32">
+                    <h4>
+                        children who are overweight from
+                        the ages of 7 to 13 may develop
+                        <b><u>heart disease</u></b> as early as age25.
+                    </h4>
+                    <h4>
+                        Obese children are twice as likely 
+                        <b><u>to die</u></b> before age 55 than their
+                        slimmer peers.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="fourthrow">
+            <div class="f6">
+                <div class="text41">
+                    <h3><b>FRENCH FRIES</b></h3>
+                    <h5>
+                        are the most common vegetable
+                        that children eat, comprising
+                    </h5>
+                    <h1>25%</h1>
+                    <h5>
+                        of their vegetable intake.
+                    </h5>
+                    <img src="./burger-solid.svg"/>
+                </div>
+            </div>
+            <div class="f7">
+                <div class="text42">
+                    <img src="./wine-glass-solid.svg"/>
+                    <h3><b>JUICE</b></h3>
+                    <h5>
+                        (which may lack important fibre
+                        found in whole fruit) makes up
+                    </h5>
+                    <h1>40%</h1>
+                    <h5>
+                        of childresn's daily fruit intake.
+                    </h5>                    
+                </div>
+            </div>
+        </div>
+        <div class="fifthrow">
+            <div class="sixthbox">
+                <div class="text51">
+                <h2>40% - 50% OF</h2>
+                <h2> TODDLERS</h2>
+                <h5>watch <b><u>more</u></b> television than is recommended.</h5>
+            </div>
+            <div class="imgfifthrow">
+                <img src="./tv-solid.svg" />
+            </div>
+            </div>
+        </div>
+        <div class="sixthrow">
+            <div class="seventhbox">
+                <div class="text61">
+                <h2>NEARLY 1/2 OF</h2>
+                <h2>PRESCHOOLERS</h2>
+                <h5>don't get enough<b><u>physical activity</u></b></h5>
+            </div>
+            <div class="imgsixthrow">
+                <img src="./bicycle-solid.svg" />
+            </div>
+            </div>
+        </div>
+        <div class="seventhrow">
+            <div class="eigthbox">
+                <div class="imgseven">
+                <img src="./sack-dollar-solid.svg" />
+                </div>
+                <p>
+                    The cost of obesity in the</p>
+                <p>   United states is staggering </p>
+                <p>totalling about
+                </p>
+                <h2>$147</h2>
+                <h2>BILLION</h2>
+            </div>
+            <div class="ninthbox">
+                <div class="h4text">
+                <h4>CHILDREN WHO</h4>
+                <h4>EAT HEALTHY </h4>
+                <h4>FOODS AND GET</h4> 
+                <h4>DAILY PHYSICAL </h4>
+                <h4>ACTIVITY HAVE:</h4>
+                </div>
+                <div class="h5text">
+                <h5>Fewer school absences</h5>
+                <h5>Higher academic acheivement</h5>
+                <h5>Higher self-esteem</h5>
+                <h5>Fewer behavioural problems</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
